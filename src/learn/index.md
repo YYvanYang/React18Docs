@@ -390,23 +390,21 @@ Hooks are more restrictive than regular functions. You can only call Hooks *at t
 
 In the previous example, each `MyButton` had its own independent `count`, and when each button was clicked, only the `count` for the button clicked changed:
 
-<section style="display:flex; ">
+<DiagramGroup>
 
-<div style="margin: 5px">
-<img src="./images/docs/diagrams/sharing_data_child.png"  height="367" width="407" alt="Diagram showing a tree of three components, one parent labeled MyApp and two children labeled MyButton. Both MyButton components contain a count with value zero." />
+<Diagram name="sharing_data_child" height={367} width={407} alt="Diagram showing a tree of three components, one parent labeled MyApp and two children labeled MyButton. Both MyButton components contain a count with value zero.">
 
 Initially, each `MyButton`'s `count` state is `0`
-</div>
 
-<div style="margin: 5px">
+</Diagram>
 
-<img src="./images/docs/diagrams/sharing_data_child_clicked.png" height=367 width=407 alt="The same diagram as the previous, with the count of the first child MyButton component highlighted indicating a click with the count value incremented to one. The second MyButton component still contains value zero." />
+<Diagram name="sharing_data_child_clicked" height={367} width={407} alt="The same diagram as the previous, with the count of the first child MyButton component highlighted indicating a click with the count value incremented to one. The second MyButton component still contains value zero." >
 
 The first `MyButton` updates its `count` to `1`
 
-</div>
+</Diagram>
 
-</section>
+</DiagramGroup>
 
 However, often you'll need components to *share data and always update together*.
 
@@ -414,21 +412,19 @@ To make both `MyButton` components display the same `count` and update together,
 
 In this example, it is `MyApp`:
 
-<DiagramGroup style="display: flex">
+<DiagramGroup>
 
-<div>
-<img src="./images/docs/diagrams/sharing_data_parent.png" height={385} width={410} alt="Diagram showing a tree of three components, one parent labeled MyApp and two children labeled MyButton. MyApp contains a count value of zero which is passed down to both of the MyButton components, which also show value zero." />
+<Diagram name="sharing_data_parent" height={385} width={410} alt="Diagram showing a tree of three components, one parent labeled MyApp and two children labeled MyButton. MyApp contains a count value of zero which is passed down to both of the MyButton components, which also show value zero." >
 
 Initially, `MyApp`'s `count` state is `0` and is passed down to both children
 
-</div>
+</Diagram>
 
-<div>
-<img src="./images/docs/diagrams/sharing_data_parent_clicked.png" height={385} width={410} alt="The same diagram as the previous, with the count of the parent MyApp component highlighted indicating a click with the value incremented to one. The flow to both of the children MyButton components is also highlighted, and the count value in each child is set to one indicating the value was passed down." />
+<Diagram name="sharing_data_parent_clicked" height={385} width={410} alt="The same diagram as the previous, with the count of the parent MyApp component highlighted indicating a click with the value incremented to one. The flow to both of the children MyButton components is also highlighted, and the count value in each child is set to one indicating the value was passed down." >
 
 On click, `MyApp` updates its `count` state to `1` and passes it down to both children
 
-</div>
+</Diagram>
 
 </DiagramGroup>
 

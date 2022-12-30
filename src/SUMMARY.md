@@ -1,6 +1,12 @@
 # Summary
+# Get Started
 
 - [Quick Start](./learn/index.md)
+  - [Tutorial: Tic-Tac-Toe](./learn/tutorial-tic-tac-toe.md)
+  - [Thinking in React](./learn/thinking-in-react.md)
+
+# Learn React
+
 - [Describing the UI](./learn/describing-the-ui.md)
   - [Your First Component](./learn/your-first-component.md)
   - [Importing and Exporting Components](./learn/importing-and-exporting-components.md)
@@ -35,3 +41,73 @@
   - [Separating Events from Effects](./learn/separating-events-from-effects.md)
   - [Removing Effect Dependencies](./learn/removing-effect-dependencies.md)
   - [Reusing Logic with Custom Hooks](./learn/reusing-logic-with-custom-hooks.md)
+
+# Reference
+
+# 'react' package
+
+- [Components](./reference/react/components.md)
+  - [<Fragment\> (<>...</>)](./reference/react/Fragment.md)
+  - [<Profiler\>](./reference/react/Profiler.md)
+  - [<StrictMode\>](./reference/react/StrictMode.md)
+  - [<Suspense\>](./reference/react/Suspense.md)
+- [Hooks](./reference/react/index.md)
+  - [useCallback](./reference/react/useCallback.md)
+  - [useContext](./reference/react/useContext.md)
+  - [useDebugValue](./reference/react/useDebugValue.md)
+  - [useDeferredValue](./reference/react/useDeferredValue.md)
+  - [useEffect](./reference/react/useEffect.md)
+  - [useId](./reference/react/useId.md)
+  - [useImperativeHandle](./reference/react/useImperativeHandle.md)
+  - [useInsertionEffect](./reference/react/useInsertionEffect.md)
+  - [useLayoutEffect](./reference/react/useLayoutEffect.md)
+  - [useMemo](./reference/react/useMemo.md)
+  - [useReducer](./reference/react/useReducer.md)
+  - [useRef](./reference/react/useRef.md)
+  - [useState](./reference/react/useState.md)
+  - [useSyncExternalStore](./reference/react/useSyncExternalStore.md)
+  - [useTransition](./reference/react/useTransition.md)
+- [APIs](./reference/react/apis.md)
+  - [createContext](./reference/react/createContext.md)
+  - [forwardRef](./reference/react/forwardRef.md)
+  - [lazy](./reference/react/lazy.md)
+  - [memo](./reference/react/memo.md)
+  - [startTransition](./reference/react/startTransition.md)
+
+# 'react-dom' package
+
+- [Components](./reference/react-dom/components/index.md)
+  - [Common components (e.g. \<div\>)](./reference/react-dom/components/common.md)
+  - [<input\>](./reference/react-dom/components/input.md)
+  - [<option\>](./reference/react-dom/components/option.md)
+  - [<progress\>](./reference/react-dom/components/progress.md)
+  - [<select\>](./reference/react-dom/components/select.md)
+  - [<textarea\>](./reference/react-dom/components/textarea.md)
+- [APIs](./reference/react-dom/index.md)
+  - [createPortal](./reference/react-dom/createPortal.md)
+  - [flushSync](./reference/react-dom/flushSync.md)
+  - [findDOMNode](./reference/react-dom/findDOMNode.md)
+  - [hydrate](./reference/react-dom/hydrate.md)
+  - [render](./reference/react-dom/render.md)
+  - [unmountComponentAtNode](./reference/react-dom/unmountComponentAtNode.md)
+- [Client APIs](./reference/react-dom/client/index.md)
+  - [createRoot](./reference/react-dom/client/createRoot.md)
+  - [hydrateRoot](./reference/react-dom/client/hydrateRoot.md)
+- [Server APIs](./reference/react-dom/server/index.md)
+  - [renderToNodeStream](./reference/react-dom/server/renderToNodeStream.md)
+  - [renderToPipeableStream](./reference/react-dom/server/renderToPipeableStream.md)
+  - [renderToReadableStream](./reference/react-dom/server/renderToReadableStream.md)
+  - [renderToStaticMarkup](./reference/react-dom/server/renderToStaticMarkup.md)
+  - [renderToStaticNodeStream](./reference/react-dom/server/renderToStaticNodeStream.md)
+  - [renderToString](./reference/react-dom/server/renderToString.md)
+
+# Legacy APIs
+- [Legacy React APIs](./reference/react/legacy.md)
+  - [Children](./reference/react/Children.md)
+  - [cloneElement](./reference/react/cloneElement.md)
+  - [Component](./reference/react/Component.md)
+  - [createElement](./reference/react/createElement.md)
+  - [createFactory](./reference/react/createFactory.md)
+  - [createRef](./reference/react/createRef.md)
+  - [isValidElement](./reference/react/isValidElement.md)
+  - [PureComponent](./reference/react/PureComponent.md)
