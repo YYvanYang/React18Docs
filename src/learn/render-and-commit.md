@@ -142,7 +142,7 @@ Otherwise, you can encounter confusing bugs and unpredictable behavior as your c
 
 #### Optimizing performance {/*optimizing-performance*/}
 
-The default behavior of rendering all components nested within the updated component is not optimal for performance if the updated component is very high in the tree. If you run into a performance issue, there are several opt-in ways to solve it described in the [Performance](https://reactjs.org/docs/optimizing-performance.html#gatsby-focus-wrapper) section. **Don't optimize prematurely!**
+The default behavior of rendering all components nested within the updated component is not optimal for performance if the updated component is very high in the tree. If you run into a performance issue, there are several opt-in ways to solve it described in the [Performance](https://reactjs.org/docs/optimizing-performance.html) section. **Don't optimize prematurely!**
 
 </DeepDive>
 
@@ -196,7 +196,7 @@ export default function App() {
 This works because during this last step, React only updates the content of `<h1>` with the new `time`. It sees that the `<input>` appears in the JSX in the same place as last time, so React doesn't touch the `<input>`—or its `value`!
 ## Epilogue: Browser paint {/*epilogue-browser-paint*/}
 
-After rendering is done and React updated the DOM, the browser will repaint the screen. Although this process is known as "browser rendering", we'll refer to it as "painting" to avoid confusion in the rest of these docs.
+After rendering is done and React updated the DOM, the browser will repaint the screen. Although this process is known as "browser rendering", we'll refer to it as "painting" to avoid confusion throughout the docs.
 
 <Illustration alt="A browser painting 'still life with card element'." src="/images/docs/illustrations/i_browser-paint.png" />
 

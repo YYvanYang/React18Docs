@@ -67,7 +67,7 @@ You defined the `handleClick` function and then [passed it as a prop](/learn/pas
 * Are usually defined *inside* your components.
 * Have names that start with `handle`, followed by the name of the event.
 
-> By convention, it is common to name event handlers as `handle` followed by the event name. You'll often see `onClick={handleClick}`, `onMouseEnter={handleMouseEnter}`, and so on.
+By convention, it is common to name event handlers as `handle` followed by the event name. You'll often see `onClick={handleClick}`, `onMouseEnter={handleMouseEnter}`, and so on.
 
 Alternatively, you can define an event handler inline in the JSX:
 
@@ -126,7 +126,7 @@ In both cases, what you want to pass is a function:
 * `<button onClick={handleClick}>` passes the `handleClick` function.
 * `<button onClick={() => alert('...')}>` passes the `() => alert('...')` function.
 
-> [Read more about arrow functions.](https://javascript.info/arrow-functions-basics)
+[Read more about arrow functions.](https://javascript.info/arrow-functions-basics)
 
 </Pitfall>
 
@@ -231,9 +231,9 @@ If you use a [design system](https://uxdesign.cc/everything-you-need-to-know-abo
 
 ### Naming event handler props {/*naming-event-handler-props*/}
 
-Built-in components like `<button>` and `<div>` only support [browser event names](TODO:/apis/react-dom/events) like `onClick`. However, when you're building your own components, you can name their event handler props any way that you like.
+Built-in components like `<button>` and `<div>` only support [browser event names](/reference/react-dom/components/common#common-props) like `onClick`. However, when you're building your own components, you can name their event handler props any way that you like.
 
-> By convention, event handler props should start with `on`, followed by a capital letter.
+By convention, event handler props should start with `on`, followed by a capital letter.
 
 For example, the `Button` component's `onClick` prop could have been called `onSmash`:
 
@@ -454,7 +454,7 @@ function Button({ onClick, children }) {
 }
 ```
 
-You could add more code to this handler before calling the parent `onClick` event handler, too. This pattern provides an *alternative* to propagation. It lets the child component handle the event, while also letting the parent component specify some additional behavior. Unlike propagation, it's not automatic. But the benefit of this pattern is that you can clearly follow the whole chain code that executes as a result of some event.
+You could add more code to this handler before calling the parent `onClick` event handler, too. This pattern provides an *alternative* to propagation. It lets the child component handle the event, while also letting the parent component specify some additional behavior. Unlike propagation, it's not automatic. But the benefit of this pattern is that you can clearly follow the whole chain of code that executes as a result of some event.
 
 If you rely on propagation and it's difficult to trace which handlers execute and why, try this approach instead.
 
